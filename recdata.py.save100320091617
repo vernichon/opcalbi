@@ -1,0 +1,37 @@
+#!/usr/bin/python
+# -*- coding: UTF8 -*- 
+import xmlrpclib
+import MySQLdb
+import datetime,time
+try:
+    server = xmlrpclib.ServerProxy("http://10.50.1.2:10018")
+except:
+    pass
+
+serveur='EH_Wetzer.OPC_DA_Server.4'
+items=['lav.LAVZSJY_-.VT_R8','lav.LAVZSJY_+.VT_R8','rdb.LAVZRDB-.VT_R8','rdb.LAVZRDB+.VT_R8',"lav.LAVZREF-.VT_R8","lav.LAVZREF+.VT_R8"]
+#~ items=['rdb.LAVZRDB-.VT_R8','rdb.LAVZRDB+.VT_R8']                                                                                                                                                             
+conn = MySQLdb.connect('localhost','root','root', 'opc')
+curs = conn.cursor()
+curs.execute("select now()")
+datet= str(curs.fetchone()[0])
+print datet.__str__()
+
+for item in items:
+    try:
+        res = server.opcserver.valeur(serveur,item)
+	print serveur," " ,item
+        timestamp=datetime.datetime.fromtimestamp(time.mktime(time.strptime(res['ITEM TIMESTAMP'],"%m/%d/%y %H:%M:%S"))).strftime('%Y-%m-%d %H:%M:%S')
+    except:
+        res={}
+        timestamp=str(datetime.datetime.fromtimestamp(time.time()))
+        res['Item Value']=0.0
+        res['Item Quality']='Bad'
+        pass
+    requete ="insert into valeurs (dateenreg,timestamp,serveur,item,valeur,etat) values ('"+datet+"','"+timestamp+"','"+serveur+"','"+item+"','"+str(res['ITEM VALUE'])+"','"+res['ITEM QUALITY']+"')"
+    curs.execute(requete)
+    curs.execute("commit")
+curs.close()
+conn.close() 
+
+

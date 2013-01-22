@@ -1,0 +1,34 @@
+<?php
+include("./conf/dbConnect.php");
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="refresh" content="600">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Synoptique du site de la Gaougne</title>
+</head>
+
+<FRAMESET rows="10%,70%,20%" frameborder="0">
+                   <frame src="titre_synoptique_gaougne.php" name="titre" >
+                   <FRAMESET cols="10%,20%,20%,20%,20%" frameborder="0">
+                             <frame scrolling= "no" frameborder="0" src=niveau_eau_brute.php name="" >
+                             <frame scrolling= "no" frameborder="0" src=affichage_pompes_gaougne.php name="" >
+                             <frame scrolling= "no" frameborder="0" src=affichage_pompes_auxiliaire.php name="">
+                             <frame scrolling= "no" frameborder="0" src=affichage_compresseur.php name="">
+                             <frame scrolling= "no"frameborder="0" src=affichage_debit_analyse_gaougne.php name="">
+
+                    </FRAMESET>
+                    <frame scrolling= "no" src=graphes_gaougne.html name="">
+
+
+</FRAMESET>
+
+<body>
+
+
+<br>
+</body></html>
+

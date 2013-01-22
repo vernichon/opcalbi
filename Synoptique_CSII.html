@@ -1,0 +1,34 @@
+<?php
+include("./conf/dbConnect.php");
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="refresh" content="600">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Synoptique du site de caussels II</title>
+<script language="javascript">
+	 if (top.frames.length!=0)
+		top.location=self.document.location
+</script>
+</head>
+
+<FRAMESET rows="10%,80%,10%" frameborder="0">
+                   <frame src="titre_synoptique_CSII.php" name="titre" >
+                   <FRAMESET cols="25%,25%,25%,25%" frameborder="0">
+                             <frame scrolling= "no" frameborder="0" src=affichage_repartiteur_CSII.php name="" >
+                             <frame scrolling= "no" frameborder="0" src=affichage_filtration_CSII.php name="" >
+                             <frame scrolling= "no" frameborder="0" src=affichage_refoulement_CSII.php name="">
+                             <frame scrolling= "no" frameborder="0" src=affichage_sterilisation_CSII.php name="">
+                    </FRAMESET>
+                    <frame scrolling= "no" src=vers_graphes_CSII.php name="">
+</FRAMESET>
+
+<body>
+
+
+<br>
+</body></html>
+

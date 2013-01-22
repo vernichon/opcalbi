@@ -1,0 +1,32 @@
+<?php
+include("./conf/dbConnect.php");
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="refresh" content="600">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Synoptique du site de caussels I</title>
+</head>
+
+<FRAMESET rows="10%,80%,10%" frameborder="1">
+                   <frame src="titre_synoptique_CSI.php" name="titre" >
+                   <FRAMESET cols="25%,25%,25%,25%" frameborder="1">
+                             <frame scrolling= "no" frameborder="1" src=affichage_repartiteur_CSI.php name="" >
+                             <frame scrolling= "no" frameborder="1" src=affichage_filtration_CSI.php name="" >
+                             <frame scrolling= "no" frameborder="1" src=affichage_refoulement_CSI.php name="">
+                             <frame scrolling= "no" frameborder="1" src=affichage_sterilisation_CSI.php name="">
+
+
+                    </FRAMESET>
+                    <frame scrolling= "no" src=vers_graphes_CSII.php name="">
+</FRAMESET>
+
+<body>
+
+
+<br>
+</body></html>
+

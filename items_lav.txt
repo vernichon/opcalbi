@@ -1,0 +1,12 @@
+EH_Wetzer.OPC_DA_Server.4;lav.LAVZSJY_-.VT_R8
+EH_Wetzer.OPC_DA_Server.4;lav.LAVZSJY_+.VT_R8
+EH_Wetzer.OPC_DA_Server.4;rdb.LAVZRDB-.VT_R8
+EH_Wetzer.OPC_DA_Server.4;rdb.LAVZRDB+.VT_R8
+EH_Wetzer.OPC_DA_Server.4;lav.LAVZREF-.VT_R8
+EH_Wetzer.OPC_DA_Server.4;lav.LAVZREF+.VT_R8
+EH_Wetzer.OPC_DA_Server.4;lav.Total.LAVZSJY_-(Monthly_analysis).VT_R8
+EH_Wetzer.OPC_DA_Server.4;lav.Total.LAVZSJY_+(Monthly_analysis).VT_R8
+EH_Wetzer.OPC_DA_Server.4;lav.Total.LAVZREF-(Monthly_analysis).VT_R8
+EH_Wetzer.OPC_DA_Server.4;lav.Total.LAVZREF+(Monthly_analysis).VT_R8
+EH_Wetzer.OPC_DA_Server.4;rdb.Total.LAVZRDB-(Monthly_analysis).VT_R8
+EH_Wetzer.OPC_DA_Server.4;rdb.Total.LAVZRDB+(Monthly_analysis).VT_R8

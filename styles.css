@@ -1,0 +1,94 @@
+
+
+h1 {
+  border-width: 0px;
+  font-size: x-large;
+  color: black;
+  text-align: center;
+}
+cell_bleu {
+  border: medium solid black;
+  background-color: #66ffff;
+}
+.cell_bleu {
+  border: medium solid black;
+  background-color: #66ffff;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+
+.titre_synoptique {
+  font-style: normal;
+  color: black;
+  opacity: 0.9;
+  background-color: #33ffff;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.fond_bleu {
+border-style: solid;
+border-width: thin;
+background-color: #33ffff;
+text-align: center;
+}
+
+.debimetre {
+border-style: none;
+border-width: 0px;
+font-family: Arial,Helvetica,sans-serif;
+font-size: xx-large;
+line-height: 0%;
+color: black;
+text-align: right;
+}
+/*debut du style pour mettre une image en fond *:
+/*valeurs par defaut pour tout les navigateurs */
+/* ne pas modifié a partir d'ici */
+* { margin:0;padding:0;}
+
+/* taille de reference */
+html {
+height:100%;
+width:100%;
+}
+/*on applique une taille et on place en absolute l'image et son conteneur */
+html img.imghtml, html div.imghtml{
+width:100%;height:100%;
+top:0;
+left:0;
+position:absolute;
+}
+
+html, html * {
+position:relative;
+z-index:0;
+}
+body {
+z-index:2; /* pour afficher tout au dessus de l'image */
+width:100%;
+height:100%;
+}
+/*ne pas modifier le css au dessus de cette ligne */
+/* vous pouvez a partir de la modifié et ajouter votre css */
+/* conteneur de votre page */
+#corps {
+width:80%; /* pour le centré ,facultatif*/
+height:100%;
+
+margin:auto; /* pour le centré ,facultatif*/
+scroll:auto;/* pour IE ? */
+
+}
+#demo{text-align:center;top:45%;font-size:30px;color:#FE1300;}
+
+#infobulle{
+position: absolute;
+visibility : hidden;
+border: 1px solid #CCCCCC;
+padding: 10px;
+font-family: Verdana, Arial;
+font-size: 10px;
+background-color: #333333;
+}

@@ -1,0 +1,30 @@
+<?php
+include("./conf/dbConnect.php");
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="refresh" content="600">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Synoptique des sites de production d'eau potable</title>
+</head>
+
+<FRAMESET rows="10%,70%,20%" frameborder="0">
+                   <frame src="titre_synoptique_general.html" name="titre" >
+                   <FRAMESET cols="20%,25%,25%,25%" frameborder="0">
+                             <frame scrolling= "no" frameborder="0" src=affichage_production.php name="" >
+                             <frame scrolling= "no" frameborder="0" src=affichage_caussels.php name="">
+                             <frame scrolling= "no" frameborder="0" src=affichage_reseau.php name="">
+                             <frame scrolling= "no" frameborder="0" src=affichage_reservoirs.php name="">
+
+                    </FRAMESET>
+                    <frame scrolling= "no" frameborder="0" src=vers_graphes_gaougne.php name="">
+</FRAMESET>
+
+<body>
+
+
+<br>
+</body></html>
